@@ -1,0 +1,6 @@
+<%= simple_form_for(@task) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :details %>
+  <p>done yet? <%= f.check_box :completed, inline_label:'done yet?' %><p>
+  <%= f.submit %>
+<% end %>
